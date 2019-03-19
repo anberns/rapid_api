@@ -1,0 +1,2 @@
+class StudentPhonemesController < ApplicationController
+end
