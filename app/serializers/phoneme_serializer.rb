@@ -1,3 +1,3 @@
 class PhonemeSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :characters, :classification
 end
