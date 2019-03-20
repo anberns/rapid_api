@@ -24,7 +24,7 @@ class UsersController < ApplicationController
     #if params[:team_id]
       #users = Team.find(params[:team_id]).users
     #else
-    users = Users.all 
+    users = User.all 
     #end
     render json: users
   end

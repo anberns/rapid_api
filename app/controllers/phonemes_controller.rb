@@ -1,6 +1,6 @@
 class PhonemesController < ApplicationController
   def index
-    phonemes = Phonemes.all 
+    phonemes = Phoneme.all 
     render json: phonemes
   end
 end
