@@ -5,8 +5,9 @@ class StudentsController < ApplicationController
   end
 
   def create 
-    student = Student.create(student_params)
-    render json: student
+    Student.create(student_params)
+    students = Student.all
+    render json: students
   end
 
   def edit
@@ -32,6 +33,6 @@ class StudentsController < ApplicationController
   private
 
     def student_params
-      params.permit(:name, :stage)
+      params.permit(:name, :stage, :user_id)
     end
 end
