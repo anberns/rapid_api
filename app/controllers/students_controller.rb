@@ -21,6 +21,12 @@ class StudentsController < ApplicationController
     render json: student
   end
 
+  def destroy
+    Student.find(params[:id]).destroy
+    students = Student.all
+    render json: students
+  end
+
   def index
     #if params[:team_id]
       #users = Team.find(params[:team_id]).users
