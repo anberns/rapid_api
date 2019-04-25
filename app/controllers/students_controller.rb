@@ -28,11 +28,7 @@ class StudentsController < ApplicationController
   end
 
   def index
-    #if params[:team_id]
-      #users = Team.find(params[:team_id]).users
-    #else
     students = Student.all 
-    #end
     render json: students
   end
 
